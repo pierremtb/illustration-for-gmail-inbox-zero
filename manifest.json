@@ -1,0 +1,17 @@
+{
+    "name": "Illustration for GMail Inbox Zero",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Replace the boring GMail Inbox Zero message with Google Inbox's sun illustration.",
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+     "content_scripts": [{
+       "run_at": "document_end",
+       "matches": ["*://mail.google.com/*"],
+       "js": ["content.js"]
+     }]
+  }
+  
